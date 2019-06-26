@@ -10,12 +10,16 @@ To download the app to run locally in R:
 
 > in RStudio --> file --> open project in new session --> navigate to unzipped folder and select the ConnectivityProject.proj file
 
+> in the file pane of RStudio, open the app.R file in the ConnectivtyProject folder
+
 > in the console enter:
   packrat::on()
   -You should recieve the notice: Packrat mode on. Using library in directory:
 - "~/Downloads/ConnectivityProject/packrat/lib" 
 
-> in the file pane of RStudio, open the app.R file in the ConnectivtyProject folder
+> in the console enter:
+  packrat::restore()
+  -You should see packrat loading the app's required packages into your packrat library
 
 > hit Run App
 
